@@ -2,8 +2,8 @@
 
 ## Steps to Reproduce
 
-1. Run `yarn`
-2. Run `yarn server`
+1. Run `npm install`
+2. Run `npm run server`
 3. Launch a fresh session of chrome with a fresh `user-data-dir` and `disk-cache-dir`
    1. On a Mac `<path-to-chrome> about:blank --user-data-dir='<path-to-empty-user-data-dir>' --disk-cache-dir='<path-to-empty-disk-cach-dir-dir>'`
 4. Open up DevTools and navigate to the Network tab
