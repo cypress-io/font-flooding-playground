@@ -5,7 +5,7 @@
 1. Run `yarn`
 2. Run `yarn server`
 3. Launch a fresh session of chrome with a fresh `user-data-dir` and `disk-cache-dir`
-   a. On a Mac `<path-to-chrome> about:blank --user-data-dir='<path-to-empty-user-data-dir>' --disk-cache-dir='<path-to-empty-disk-cach-dir-dir>'`
+   1. On a Mac `<path-to-chrome> about:blank --user-data-dir='<path-to-empty-user-data-dir>' --disk-cache-dir='<path-to-empty-disk-cach-dir-dir>'`
 4. Open up DevTools and navigate to the Network tab
 5. Navigate to `http://localhost:8080/maxage`
 6. Notice that there is only one entry for the font resource
