@@ -4,7 +4,11 @@ const fs = require('fs')
 
 const app = express()
 
-const comment = Array(10000000).fill('-').join('')
+let css = ''
+
+for (let i = 0; i < 1000000; i++) {
+  css = `${css}.a${i} { background-color: red; }\n`
+}
 
 app.set('etag', false)
 
@@ -32,7 +36,7 @@ app.use(
 
     const contents = fs.readFileSync(path.join(__dirname, 'public', req.params.file), 'utf8')
 
-    res.send(`${contents}\n\n/*${comment}*/`)
+    res.send(`${contents}\n\n${css}`)
   },
 )
 
